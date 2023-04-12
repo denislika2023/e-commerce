@@ -18,7 +18,7 @@ const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
 
-  console.log(formFields);
+  console.log(formFields); 
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -27,7 +27,7 @@ const SignUpForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if (password != confirmPassword) {
+    if (password !== confirmPassword) {
       alert("password do not match");
       return;
     }
@@ -52,7 +52,6 @@ const SignUpForm = () => {
 
     setFormFields({ ...formFields, [name]: value });
   };
-
   return (
     <div className="sign-up-container">
       <h2>Don't have an account?</h2>
@@ -78,7 +77,7 @@ const SignUpForm = () => {
           label="Password"
           type="password"
           required
-          onChange={handleChange}
+          onChange={handleChange}   
           name="password"
           value={password}
         />

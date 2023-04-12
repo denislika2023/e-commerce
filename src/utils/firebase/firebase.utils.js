@@ -4,17 +4,14 @@ import {
     signInWithRedirect,
     signInWithPopup,
     GoogleAuthProvider,
-    createUserWithEmailAndPassword
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword
 } from 'firebase/auth';
 import{
 getFirestore,
 doc,
 getDoc,
-setDoc
-
-} from 'firebase/firestore';
-
-
+setDoc} from 'firebase/firestore';
 
 
 // Your web app's Firebase configuration
@@ -72,10 +69,16 @@ const firebaseConfig = {
         console.log('error creating the user',error.message )
       }
     }
-    return userDocRef
+    return userDocRef;
   }; 
 
 export const createAuthUserWithEmailAndPassword = async (email,password)=>{
   if(!email || !password)return;
   return await createUserWithEmailAndPassword(auth,email,password);
+};
+
+
+export const signInAuthUserWithEmailAndPassword = async (email,password)=>{
+  if(!email || !password)return;
+  return await signInWithEmailAndPassword(auth,email,password);
 };
