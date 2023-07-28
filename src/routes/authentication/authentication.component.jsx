@@ -1,6 +1,6 @@
-import SignUpForm from '../../components/directory-item/sign-up/sign-up.form'
-import SignInForm from '../../components/sign-in/sign-in.form'
-import './authentication.styles.scss'
+import SignUpForm from '../../components/directory-item/sign-up/sign-up.form';
+import SignInForm from '../../components/sign-in/sign-in.form';
+import './authentication.styles.scss';
 
 const Authentication = () => {
   return (
@@ -8,7 +8,7 @@ const Authentication = () => {
       <SignInForm />
       <SignUpForm />
     </div>
-  )
-}
+  );
+};
 
-export default Authentication
+export default Authentication;
