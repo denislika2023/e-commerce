@@ -20,7 +20,7 @@ export const Body = styled.div`
   position: absolute;
 
   @media screen and (max-width:800px) {
-    width:30%;
+    width:35%;
   }
 
   h2 {
