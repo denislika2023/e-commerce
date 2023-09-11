@@ -1,5 +1,7 @@
-require("dotenv").config();
-const stripe = require("stripe")("sk_test_51NYTOUBUKjUl503c71lv7A1VOrxH0MyoUjaFCs9N3exrxf4YU1dPXrgkk5zjzPMAEjAYJbcygmq4lD54poZnQSeg00XeLU8CQf");
+require('dotenv').config();
+const stripe = require('stripe')(
+  'sk_test_51NYTOUBUKjUl503c71lv7A1VOrxH0MyoUjaFCs9N3exrxf4YU1dPXrgkk5zjzPMAEjAYJbcygmq4lD54poZnQSeg00XeLU8CQf'
+);
 
 exports.handler = async (event) => {
   try {
@@ -23,5 +25,3 @@ exports.handler = async (event) => {
     };
   }
 };
-
-
