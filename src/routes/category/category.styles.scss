@@ -9,3 +9,15 @@
   margin-bottom: 25px;
   text-align: center;
 }
+
+
+@media screen and (max-width: 600px) {
+  .category-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 20px; 
+    row-gap: 20px;
+  }
+}

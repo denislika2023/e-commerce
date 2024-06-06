@@ -16,7 +16,7 @@ const CartDropdown = () => {
 
   const goToCheckoutHandler = useCallback(() => {
     navigate('/checkout');
-  }, []);
+  }, [navigate]); // Added navigate to the dependencies array
 
   return (
     <CartDropdownContainer>
